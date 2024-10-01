@@ -56,6 +56,22 @@
                 <!-- Replace Skills with Resume Button -->
                 <a href="danielKlevak2024Resume.pdf" target="_blank" class="btn">View My Resume</a>
             </div>
+            <div class="skills-block">
+    <h3>My Skills</h3>
+    <div class="skill-category">
+        <h4>Programming Languages</h4>
+        <p>C++, Java, Python, SQL, SystemVerilog, R</p>
+    </div>
+    <div class="skill-category">
+        <h4>Software and Systems</h4>
+        <p>Solidworks, AutoCAD, Autodesk Inventor, Arduino, Linux, Microsoft, Github</p>
+    </div>
+    <div class="skill-category">
+        <h4>Hardware</h4>
+        <p>Microcontrollers, Raspberry Pi, Power tools, Soldering</p>
+    </div>
+</div>
+
         </div>
     </section>
     <!-- Projects Section -->
@@ -100,6 +116,13 @@
                     <img src="ekg.jpg" alt="Project 1">
                     <div class="project-info">
                         <h3>EKG Circuit</h3>
+                    </div>
+                </div>
+
+                 <div class="project-card" onclick="openPopup('Single Cycle Datapath', 'In my Digital Design class, we learned about how processors work with RISC-V instructions, and learned how to program using SystemVerilog. This learning culminated in the development of a single cycle datapath, which was capable of taking in RISC-V instructions and completing them. All of the components of the datapath were designed in SystemVerilog.')">
+                    <img src="single_cycle_cpu_datapath.png" alt="Project 1">
+                    <div class="project-info">
+                        <h3>Single Cycle Datapath</h3>
                     </div>
                 </div>
 
@@ -149,7 +172,7 @@
 
 
     <!-- Contact Section -->
-
+ <section id="contact" class="section contact-section">
     <h2>Reach Out</h2>
     <form id="contact-form" onsubmit="sendMail(); return false;">
         <input type="text" id="fromName" placeholder="Your Name" required>
@@ -158,6 +181,7 @@
         <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
         <button type="submit" class="btn">Send Message</button>
     </form>
+ </section>
 
     <!-- Footer -->
     <footer>
