@@ -5,26 +5,18 @@
     box-sizing: border-box;
 }
 /* Skills Block Styling */
+/* Skills Block Styling (Centered) */
 .skills-block {
-    margin: auto;
-    margin-top: 2rem; /* Space between the previous paragraph and the skills block */
-    background: #f9f9f9; /* Light background for contrast */
+    margin: 2rem auto; /* Center the block horizontally */
+    width: 80%; /* Control the width of the skills block */
+    background: #f9f9f9;
     padding: 1.5rem;
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center text within the block */
 }
 
-.skills-block h3 {
-    color: var(--primary-color);
-    margin-bottom: 1rem;
-    text-align: center; /* Center the title */
-    font-size: 1.8rem;
-}
-
-.skill-category {
-    margin-bottom: 1rem;
-}
-
+/* Center each skill category */
 .skill-category h4 {
     color: var(--secondary-color);
     font-weight: 600;
@@ -34,7 +26,17 @@
 .skill-category p {
     font-size: 1rem;
     line-height: 1.6;
+    margin: 0 auto; /* Center the skill text */
+    display: inline-block; /* Keeps the text inline */
 }
+
+/* Optional: Adjust the section title */
+.skills-block h3 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+}
+
 
 /* Variables */
 :root {
