@@ -4,6 +4,36 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* Skills Block Styling */
+.skills-block {
+    margin-top: 2rem; /* Space between the previous paragraph and the skills block */
+    background: #f9f9f9; /* Light background for contrast */
+    padding: 1.5rem;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.skills-block h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    text-align: center; /* Center the title */
+    font-size: 1.8rem;
+}
+
+.skill-category {
+    margin-bottom: 1rem;
+}
+
+.skill-category h4 {
+    color: var(--secondary-color);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.skill-category p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
 
 /* Variables */
 :root {
