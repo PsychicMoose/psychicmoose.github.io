@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - [Your Name]</title>
+    <link rel="stylesheet" href="css/aboutme.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHq6gV/..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- Floating Shapes -->
+    <div class="floating-shapes">
+        <div class="shape shape1"></div>
+        <div class="shape shape2"></div>
+        <div class="shape shape3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+
+    <!-- About Me Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <img src="coverPhoto.jpg" alt="Profile Picture" class="profile-pic">
+            <div class="about-content">
+                <h2>Get to know me</h2>
+                <body>
+                    <p>Hi! Thanks for coming. I am Daniel, a college senior simultaneously pursuing a bachelors in computer engineering and a masters in cyber physical systems at Northeastern University.</p>
+                    
+                    <p>Growing up in Fort Lee, New Jersey, I have always had an interest in understanding how things worked. As a child, this usually took the form of breaking and disassembling anything I could get my hands on to see what it was made of. As I grew older, though, I realized that although breaking things was fun, building things was not only more fun, but also more rewarding. Slowly, my interest in engineering was growing. This realization led me to apply to the Academy for Engineering and Design Technology at Bergen County Academies for high school. Here, my passion for engineering truly exploded. I picked up as many skills as I could: 3D modeling, programming, building circuits — I couldn't get enough.</p>
+                    
+                    <p>My path then led me to Boston, Massachusetts, where I am now. As a student at Northeastern, I have had the opportunity to work on a plethora of exciting projects and gain work experience as a co-op at Stemwave and Sparx Hockey. All of these experiences have left me with a rich software and hardware skillset, which I now hope to apply to a career in the Internet of Things. My biggest strength, however, is my creativity, and I love applying it to develop systems and solve complex tasks. Soon, I will apply all of my skills to a career in smart city development or space and marine exploration. These fields captivate my mind, as they will be some of the biggest drivers of our future world — a world I would love to help build.</p>
+                    
+                    <p>In my free time, I enjoy reading fiction and non-fiction, pursuing personal engineering projects, writing, watching TV, and playing basketball with my friends. I am also a part of NUTV, a video production club on campus, which enables me to learn filming and editing while also expressing myself creatively. I was the head of NUTV's entertainment department, where I planned meetings and events for our many members. It was very rewarding to build an environment where people can express themselves and their ideas freely, and I loved being able to watch someone produce a video, from their first pitch to the club, to the final upload to YouTube.</p>
+                    
+                    <p>Some of my favorite books are *The Alchemist* by Paulo Coelho, *Outliers* by Malcolm Gladwell, and *The Wind-Up Bird Chronicles* by Haruki Murakami. Some of my favorite TV shows are *Better Call Saul*, *BoJack Horseman*, and *Community*.</p>
+                    
+                    <p>Please feel free to look around further, to learn more about my projects and experience.</p>
+                
+                </body>
+                <!-- Replace Skills with Resume Button -->
+                <a href="danielKlevak2024Resume.pdf" target="_blank" class="btn">View My Resume</a>
+            </div>
+        </div>
+    </section>
+    <!-- Projects Section -->
+<!-- Bento Board Section -->
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <h2>Some cool things I've done...</h2>
+            <div class="projects-grid">
+                <!-- Restored all project cards -->
+                <div class="project-card" onclick="openPopup('Stemwave', 'At Stemwave, I had the oppurtunity to work in a dynamic startup environment as an engineer. This meant that I was able to gain experience in almost every aspect of the business in addition to working on my own project. Whether it was helping to implement Salesforce, creating visualizaions and data analysis in Python for the COO, QAing millions of dollars worth of inventory, repairing high and low voltage hardware, or improving the embedded software of the Stemwave device, there was always something for me to sink my teeth into. As far as my own project, I developed a tool with arduino and Raspberry PI that would enable us to verify device functionality in the field rather than having them be shipped back to us. I accomplished this by messing around with different ways to detect force output, until I finally settled on using an accelerometer with a 3d printed case that I designed. This innovation has the potential to save the company thousands of dollars a month on shipping costs, and ensure a smoother user experience for their providers.')">
+                    <img src="stemwave.jpg" alt="Project 4">
+                    <div class="project-info">
+                        <h3>Product Development and R&D Co-op</h3>
+                    </div>
+                </div>
+                
+                <div class="project-card" onclick="openPopup('Sparx Hockey', 'At Sparx Hockey my boss and I served as the core electrical and computer engineers at the company. This meant that I was responsible for a variety of hardware and software tasks. I used Arduino to protoype potential future products, I used various laser measurement and computer vision tools for testing and verifying products, and used C# to create data visualazation UIs for product testing as well as for the sales team.')">
+                    <img src="sparx.png" alt="Project 3">
+                    <div class="project-info">
+                        <h3>Electrical and Computer Engineering Co-op</h3>
+                    </div>
+                </div>
+
+
+                <div class="project-card" onclick="openPopup('Capstone Project for the Blind', 'The SEE(system for envisioning environment) is a tool for blind people to better gain awareness of their surrorunding. This is accomplished through a pair of glasses that leverage computer stereovision and image recognition to identify objects and their distances, as well as through a pair of shoes that use ultrasonic sensors to detect low-level obstacles. The users are then given feedback through a haptic motor band at the legs and speakers built into the glasses. With the SEE, the blind can walk through the world with a higher sense of comfort and safety.')">
+                    <img src="blind.jpg" alt="Project 2">
+                    <div class="project-info">
+                        <h3>SEE</h3>
+                    </div>
+                </div>
+               
+                
+                <div class="project-card" onclick="openPopup('Lunabotics', 'As part of the first ever Northeastern Lunabotics team, I am helping to innovate solutions for a robot capable of construction on the moon. The NASA challenge comes with many fascinating problems to tackle, and I am excited to continue developing the automation and telemetry systems.')">
+                    <img src="lunabotics.png" alt="Project 5">
+                    <div class="project-info">
+                        <h3>NASA Lunabotics Challenge</h3>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="openPopup('Electrocardiogram', 'In my circuits and signals class, I got the oppurtunity to have my knowledge culminate in the electrocardiogram final project. In this project, we used instrumentation and operational amplifiers to read signals from electrodes on the human body. These signals were read through an Oscilliscope and then converted from their analog state into digital data that could be read and analyzed in MATLAB. From this data, we were able to determine the BPM of a user as well as use Fourier transforms to further study and measure the heartbeat signal.')">
+                    <img src="ekg.jpg" alt="Project 1">
+                    <div class="project-info">
+                        <h3>EKG Circuit</h3>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="openPopup('Robotic Arm in Quartus', 'This project was accomplished for my embedded design class, where we learned about digital logic and how to use it when programming FPGAS. I designed a complex logic gate circuit in Quartus Prime which would drive the arm to complete its tasks, and then uploaded it to a DE1-SoC to be able to interfacec with the robotic arm. Please view this video for a more indepth look.', 'https://www.youtube.com/embed/3yZI4io2ZdM')">
+                    <img src="robot.png" alt="Project 6">
+                    <div class="project-info">
+                        <h3>Robotic Arm Programming</h3>
+                    </div>
+                </div>
+                <div class="project-card" onclick="openPopup('Fibonacci Clock', 'This was a personal project, which I treated as a jumping off point in developing a smart home system. I found some resources online about constructing Fibonacci Clocks, and opted to make my own solution using an ESP32 as the microcontroller in order to have it be web enabled and use RTP in order to pull the time.')">
+                    <img src="fibonacci.jpg" alt="Project 7">
+                    <div class="project-info">
+                        <h3>Fibonacci Clock</h3>
+                    </div>
+                </div>
+                <div class="project-card" onclick='openPopup("Finance Bros App", "The final project for my database design class gave me experience with full stack development. My team and I designed a database with SQL, then used REST APIs in order to showcase users stock picks, as well as update them with the trades of other users. Explore the code on <a href=\"https://github.com/guenbr/cs3200-FinanceBros\" target=\"_blank\">this repository</a>.")'>
+                    <img src="financebro.png" alt="Project 8">
+                    <div class="project-info">
+                        <h3>Finance Bros Database App</h3>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="openPopup('Coral Reef Drone', 'In high school, I was lucky enough to gain access to the mechatronics research lab, where my friend and I constructed a Coral Reef Monitoring Marine Drone (CRMMD). This drone was designed to look like a fish to reduce any disturbances to the environment. It was equipped with a camera that would run computer vision to accomplish things like identifying species and measuring coral reef bleaching. More information on the image analysis can be found <a href=&quot;https://sites.google.com/bergen.org/coralreefimageprocessing/home&quot; target=&quot;_blank&quot;>here</a>. For this work, we recieved an award from the American Meteorological Society. Although we never got the chance to finish this project, it was foundational in cementing my love for using engineering to solve real world issues that are important to me, and to date remains one of the most meaningful things I have ever worked on.')">
+                    <img src="coral.jpg" alt="Project 9">
+                    <div class="project-info">
+                        <h3>Coral Reef Research</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+        <!-- Popup Container -->
+        <div id="project-popup" class="popup hidden">
+            <div class="popup-content">
+                <span class="close-btn">&times;</span>
+                <h2 id="popup-title"></h2>
+                <p id="popup-info"></p>
+            </div>
+        </div>
+    </section>
+
+  
+
+      <!-- interests -->
+      <!-- Interests Section -->
+
+
+    <!-- Contact Section -->
+    <form id="contact-form" onsubmit="sendMail(); return false;">
+        <input type="text" id="fromName" placeholder="Your Name" required>
+        <input type="email" id="emailSender" placeholder="Your Email" required>
+        <input type="text" id="subjectSender" placeholder="Subject" required>
+        <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+    </form>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Daniel Klevak. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/daniel-klevak-b75383181/"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+    <!-- ScrollReveal Library -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function() {
+        emailjs.init("Qap7LiBhUo3lolkTE"); // Replace with your User ID from EmailJS
+    })();
+    </script>
+
+</body>
+</html>
