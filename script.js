@@ -87,40 +87,37 @@ document.addEventListener('DOMContentLoaded', () => {
     hamburger.addEventListener('click', () => navMenu.classList.toggle('show'));
 
     /* ----- Contact Form Submission ----- */
-    const contactForm = document.getElementById('contact-form');
-    contactForm.addEventListener('submit', (e) => {
+    document.getElementById("contact-form").addEventListener("submit", (e) => {
         e.preventDefault();
-        alert('Thank you for your message!');
-        contactForm.reset();
-    });
+        
+        // Collect form data
+        const formData = {
+          fromName: document.getElementById("fromName").value,
+          emailSender: document.getElementById("emailSender").value,
+          subjectSender: document.getElementById("subjectSender").value,
+          message_sender: document.getElementById("message").value,
+        };
+      
+        // Send the data to Google Apps Script
+        fetch('https://script.google.com/macros/s/AKfycbzeSWdAvO6egWBTB1eOxPP20Rntme32WjL5nOkJOcEYvmR0SZ4x5P0h8wOMLKaYPxV4kg/exec', {
+          method: 'POST',
+          body: JSON.stringify(formData),
+          headers: { 'Content-Type': 'application/json' },
+        })
+        .then(response => response.text())
+        .then(responseText => {
+            const responseDiv = document.getElementById("response");  // Create a div in your HTML for messages
+            responseDiv.innerHTML = `<p class="success">Thank you for reaching out! Your message has been sent.</p>`;// Show success message
+          document.getElementById("contact-form").reset();  // Reset the form
+        })
+        .catch(error => console.error('Error sending message:', error));
+      });
 
     /* ----- Scroll to Top Button ----- */
     const btnScrollToTop = document.querySelector("#btnScrollToTop");
     btnScrollToTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
 });
 
-/* ----- EmailJS Send Email Functionality ----- */
-(function() {
-    emailjs.init("Qap7LiBhUo3lolkTE"); // Replace with your Public Key (User ID)
-})();
-
-function sendMail() {
-    var tempParams = {
-        from_name: document.getElementById("fromName").value,
-        email_sender: document.getElementById("emailSender").value,
-        subject_sender: document.getElementById("subjectSender").value,
-        message_sender: document.getElementById("message").value,
-    };
-
-    emailjs.send("service_1v5yv8b", "template_gdt5gzs", tempParams)
-    .then(function(response) {
-        console.log("Success!", response.status, response.text);
-        alert('Your message has been sent successfully!');
-    }, function(error) {
-        console.error("Failed...", error);
-        alert('Failed to send message. Please try again later.');
-    });
-}
 
 
 /* ----- Typing Animation Script ----- */
