@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - Daniel Klevak</title>
+    <title>About Me - [Your Name]</title>
     <link rel="stylesheet" href="aboutme.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -56,22 +56,6 @@
                 <!-- Replace Skills with Resume Button -->
                 <a href="danielKlevak2024Resume.pdf" target="_blank" class="btn">View My Resume</a>
             </div>
-            <div class="skills-block">
-    <h3>My Skills</h3>
-    <div class="skill-category">
-        <h4>Programming Languages</h4>
-        <p>C++, Java, Python, SQL, SystemVerilog, R</p>
-    </div>
-    <div class="skill-category">
-        <h4>Software and Systems</h4>
-        <p>Solidworks, AutoCAD, Autodesk Inventor, Arduino, Linux, Microsoft, Github</p>
-    </div>
-    <div class="skill-category">
-        <h4>Hardware</h4>
-        <p>Microcontrollers, Raspberry Pi, Power tools, Soldering</p>
-    </div>
-</div>
-
         </div>
     </section>
     <!-- Projects Section -->
@@ -119,12 +103,13 @@
                     </div>
                 </div>
 
-                 <div class="project-card" onclick="openPopup('Single Cycle Datapath', 'In my Digital Design class, we learned about how processors work with RISC-V instructions, and learned how to program using SystemVerilog. This learning culminated in the development of a single cycle datapath, which was capable of taking in RISC-V instructions and completing them. All of the components of the datapath were designed in SystemVerilog.')">
+                <div class="project-card" onclick="openPopup('Single Cycle Datapath', 'In my Digital Design class, we learned about how processors work with RISC-V instructions, and learned how to program using SystemVerilog. This learning culminated in the development of a single cycle datapath, which was capable of taking in RISC-V instructions and completing them. All of the components of the datapath were designed in SystemVerilog.')">
                     <img src="single_cycle_cpu_datapath.png" alt="Project 1">
                     <div class="project-info">
                         <h3>Single Cycle Datapath</h3>
                     </div>
                 </div>
+
 
                 <div class="project-card" onclick="openPopup('Robotic Arm in Quartus', 'This project was accomplished for my embedded design class, where we learned about digital logic and how to use it when programming FPGAS. I designed a complex logic gate circuit in Quartus Prime which would drive the arm to complete its tasks, and then uploaded it to a DE1-SoC to be able to interfacec with the robotic arm. Please view this video for a more indepth look.', 'https://www.youtube.com/embed/3yZI4io2ZdM')">
                     <img src="robot.png" alt="Project 6">
@@ -152,6 +137,20 @@
                     </div>
                 </div>
             </div>
+            <div class="skills-block">
+                <h3>My Skills</h3>
+                <div class="skill-category">
+                    <h4>Programming Languages</h4>
+                    <p>C++, Java, Python, SQL, SystemVerilog, R</p>
+                </div>
+                <div class="skill-category">
+                    <h4>Software and Systems</h4>
+                    <p>Solidworks, AutoCAD, Autodesk Inventor, Arduino, Linux, Microsoft, Github</p>
+                </div>
+                <div class="skill-category">
+                    <h4>Hardware</h4>
+                    <p>Microcontrollers, Raspberry Pi, Power tools, Soldering</p>
+                </div>
         </div>
         </div>
         
@@ -172,16 +171,15 @@
 
 
     <!-- Contact Section -->
- <section id="contact" class="section contact-section">
-    <h2>Reach Out</h2>
-    <form id="contact-form" onsubmit="sendMail(); return false;">
+    <form id="contact-form">
         <input type="text" id="fromName" placeholder="Your Name" required>
         <input type="email" id="emailSender" placeholder="Your Email" required>
         <input type="text" id="subjectSender" placeholder="Subject" required>
         <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
         <button type="submit" class="btn">Send Message</button>
     </form>
- </section>
+    <div id="response" style="margin-top: 20px;"></div>
+
 
     <!-- Footer -->
     <footer>
@@ -195,12 +193,7 @@
     <script src="script.js"></script>
     <!-- ScrollReveal Library -->
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script type="text/javascript">
-    (function() {
-        emailjs.init("Qap7LiBhUo3lolkTE"); // Replace with your User ID from EmailJS
-    })();
-    </script>
+
 
 </body>
 </html>
