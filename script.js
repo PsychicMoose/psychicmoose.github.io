@@ -99,10 +99,11 @@ document.addEventListener('DOMContentLoaded', () => {
         };
       
         // Send the data to Google Apps Script
-        fetch('https://script.google.com/macros/s/AKfycbzeSWdAvO6egWBTB1eOxPP20Rntme32WjL5nOkJOcEYvmR0SZ4x5P0h8wOMLKaYPxV4kg/exec', {
+        fetch('https://script.google.com/macros/s/AKfycbwTtg8UFeUt-612xPrZniGqUR_XwhIl6eQyWdyrypP5Rnjh8Ksn-WJF0k-2mFbe8xC9bQ/exec', {
           method: 'POST',
           body: JSON.stringify(formData),
           headers: { 'Content-Type': 'application/json' },
+          mode: 'cors'
         })
         .then(response => response.text())
         .then(responseText => {
