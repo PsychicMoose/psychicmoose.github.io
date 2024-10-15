@@ -87,32 +87,29 @@ document.addEventListener('DOMContentLoaded', () => {
     hamburger.addEventListener('click', () => navMenu.classList.toggle('show'));
 
     /* ----- Contact Form Submission ----- */
-    document.getElementById("contact-form").addEventListener("submit", (e) => {
-        e.preventDefault();
-        
-        // Collect form data
-        const formData = {
-          fromName: document.getElementById("fromName").value,
-          emailSender: document.getElementById("emailSender").value,
-          subjectSender: document.getElementById("subjectSender").value,
-          message_sender: document.getElementById("message").value,
-        };
-      
-        // Send the data to Google Apps Script
-        fetch('https://script.google.com/macros/s/AKfycbyE9GdVO_9pHUi81uESdcYALbnvnTVY34g1w-slYXXJojAFd9SALnIcHap-lXYJe0OipA/exec', {
-          method: 'POST',
-          body: JSON.stringify(formData),
-          headers: { 'Content-Type': 'application/json' },
-          mode: 'cors'
-        })
-        .then(response => response.text())
-        .then(responseText => {
-            const responseDiv = document.getElementById("response");  // Create a div in your HTML for messages
-            responseDiv.innerHTML = `<p class="success">Thank you for reaching out! Your message has been sent.</p>`;// Show success message
-          document.getElementById("contact-form").reset();  // Reset the form
-        })
-        .catch(error => console.error('Error sending message:', error));
-      });
+document.getElementById("contact-form").addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    // Collect form data
+    const fromName = document.getElementById("fromName").value;
+    const emailSender = document.getElementById("emailSender").value;
+    const subjectSender = document.getElementById("subjectSender").value;
+    const messageSender = document.getElementById("message").value;
+
+    // Construct mailto link
+    const mailtoLink = `mailto:dakleva@gmail.com?subject=${encodeURIComponent(subjectSender)}&body=${encodeURIComponent(`From: ${fromName} (${emailSender})\n\n${messageSender}`)}`;
+
+    // Open the mail client with the populated data
+    window.location.href = mailtoLink;
+
+    // Optionally, show a message to the user
+    const responseDiv = document.getElementById("response");
+    responseDiv.innerHTML = `<p class="success">Thank you for reaching out! Your email client will now open.</p>`;
+
+    // Reset the form
+    document.getElementById("contact-form").reset();
+});
+
 
     /* ----- Scroll to Top Button ----- */
     const btnScrollToTop = document.querySelector("#btnScrollToTop");
