@@ -99,6 +99,7 @@ document.getElementById("contact-form").addEventListener("submit", (e) => {
     // Construct mailto link
     const mailtoLink = `mailto:dakleva@gmail.com?subject=${encodeURIComponent(subjectSender)}&body=${encodeURIComponent(`From: ${fromName} (${emailSender})\n\n${messageSender}`)}`;
 
+    console.log(mailtoLink)
     // Open the mail client with the populated data
     window.location.href = mailtoLink;
 
@@ -109,6 +110,7 @@ document.getElementById("contact-form").addEventListener("submit", (e) => {
     // Reset the form
     document.getElementById("contact-form").reset();
 });
+
 
 
     /* ----- Scroll to Top Button ----- */
