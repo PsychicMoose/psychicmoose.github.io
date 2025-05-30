@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - Daniel Klevak</title>
-    <link rel="stylesheet" href="aboutme.css">
+    <title>About Me</title>
+    <link rel="stylesheet" href="css/aboutme.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHq6gV/..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
+
+
 <body>
 
     <!-- Floating Shapes -->
@@ -36,25 +39,26 @@
     <!-- About Me Section -->
     <section id="about" class="section about-section">
         <div class="container">
-            <img src="coverPhoto.jpg" alt="Profile Picture" class="profile-pic">
+            <img src="daniel.jpg" alt="Profile Picture" class="profile-pic">
             <div class="about-content">
-                <h2>Get to know me</h2>
                 <body>
-                    <p>Hi! Thanks for coming. I am Daniel, a college senior simultaneously pursuing a bachelors in computer engineering and a masters in cyber physical systems at Northeastern University.</p>
-                    
-                    <p>Growing up in Fort Lee, New Jersey, I have always had an interest in understanding how things worked. As a child, this usually took the form of breaking and disassembling anything I could get my hands on to see what it was made of. As I grew older, though, I realized that although breaking things was fun, building things was not only more fun, but also more rewarding. Slowly, my interest in engineering was growing. This realization led me to apply to the Academy for Engineering and Design Technology at Bergen County Academies for high school. Here, my passion for engineering truly exploded. I picked up as many skills as I could: 3D modeling, programming, building circuits — I couldn't get enough.</p>
-                    
-                    <p>My path then led me to Boston, Massachusetts, where I am now. As a student at Northeastern, I have had the opportunity to work on a plethora of exciting projects and gain work experience as a co-op at Stemwave and Sparx Hockey. All of these experiences have left me with a rich software and hardware skillset, which I now hope to apply to a career in the Internet of Things. My biggest strength, however, is my creativity, and I love applying it to develop systems and solve complex tasks. Soon, I will apply all of my skills to a career in smart city development or space and marine exploration. These fields captivate my mind, as they will be some of the biggest drivers of our future world — a world I would love to help build.</p>
-                    
-                    <p>In my free time, I enjoy reading both fiction and non-fiction, pursuing personal engineering projects, playing chess, writing, watching TV, playing basketball with my friends, and learning about a variety of topics on YouTube. I am also a part of NUTV, a video production club on campus, which enables me to learn filming and editing while also expressing myself creatively. I was the head of NUTV's entertainment department, where I planned meetings and events for our many members. It was very rewarding to build an environment where people can express themselves and their ideas freely, and I loved being able to watch someone produce a video, from their first pitch to the club, to the final upload to YouTube.</p>
-                    
-                    <p>Some of my favorite books are *The Alchemist* by Paulo Coelho, *Outliers* by Malcolm Gladwell, and *The Wind-Up Bird Chronicles* by Haruki Murakami. Some of my favorite TV shows are *Better Call Saul*, *BoJack Horseman*, and *Community*.</p>
-                    
-                    <p>Please feel free to look around further, to learn more about my projects and experience.</p>
+                    <section id="about">
+                        <h2>Get to Know Me</h2>
+                        <p>Hey, I’m Daniel—a builder and creative engineer focused on AI, automation, and human systems. I recently graduated <strong>cum laude</strong> from Northeastern University with a degree in Computer Engineering, and I’m now pursuing my master’s in Cyber-Physical Systems while launching my own automation business.</p>
+                      
+                        <p>I grew up in Fort Lee, New Jersey, the kind of kid who took apart everything just to see how it worked. That curiosity led me to the Academy for Engineering and Design Technology at Bergen County Academies, where I dove deep into 3D modeling, programming, and circuit design. It’s also where I realized: breaking things is fun—but building things is better.</p>
+                      
+                        <p>Since then, I’ve worked in both hardware and software roles at Sparx Hockey and Stemwave, completed projects ranging from stereo vision wearables to full-stack automation flows, and developed a bias for building systems that solve real problems and ship fast. Right now, I’m helping small businesses streamline client operations using n8n, Notion, and GPT-4—and I’m mapping out an AI-powered voice assistant wearable: minimalist, screenless, designed to support behavior and reflection rather than distraction.</p>
+                      
+                        <p>Outside of work, I tinker with electronics, sketch out new ideas, journal, and write. I’m drawn to stories with depth, strangeness, and meaning—<em>Murakami, BoJack Horseman, Vonnegut, Community</em>. I also led NUTV’s entertainment department, helping creators take their wildest ideas from pitch to production.</p>
+                      
+                        <p>Thanks for stopping by, feel free check out my projects below or reach out if you want to build something real.</p>
+                      </section>
+                      
                 
                 </body>
                 <!-- Replace Skills with Resume Button -->
-                <a href="danielKlevak2024Resume.pdf" target="_blank" class="btn">View My Resume</a>
+                <a href="danielsresume.pdf" target="_blank" class="btn">View My Resume</a>
             </div>
         </div>
     </section>
@@ -81,18 +85,31 @@
                 </div>
 
 
-                <div class="project-card" onclick="openPopup('Capstone Project for the Blind', 'The SEE(system for envisioning environment) is a tool for blind people to better gain awareness of their surrorunding. This is accomplished through a pair of glasses that leverage computer stereovision and image recognition to identify objects and their distances, as well as through a pair of shoes that use ultrasonic sensors to detect low-level obstacles. The users are then given feedback through a haptic motor band at the legs and speakers built into the glasses. With the SEE, the blind can walk through the world with a higher sense of comfort and safety.')">
-                    <img src="blind.jpg" alt="Project 2">
+                <div class="project-card" onclick="openPopup('Capstone Project for the Blind', 'The SEE(system for envisioning environment) is a tool for blind people to better gain awareness of their surrorunding. This is accomplished through a hat that leverage computer stereovision and image recognition to identify objects and their distances, as well as through a pair of shoes that use ultrasonic sensors to detect low-level obstacles. The users are then given feedback through a haptic motor band at the legs and speakers built into the glasses. With the SEE, the blind can walk through the world with a higher sense of comfort and safety.')">
+                    <img src="SeeSystem.jpg" alt="Project 2">
                     <div class="project-info">
-                        <h3>SEE</h3>
+                        <h3>System for Envisioning Environments</h3>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="openPopup('Automated Cell Measurement', 'Trained a yolo model to identify blood cells from images within microscope slide in order to vastly increase the efficiency of counting and measuring the cells.')">
+                    <img src="cell_counter.jpg" alt="Project 5">
+                    <div class="project-info">
+                        <h3>YOLO based Cell Counter</h3>
                     </div>
                 </div>
                
-                
-                <div class="project-card" onclick="openPopup('Lunabotics', 'As part of the first ever Northeastern Lunabotics team, I am helping to innovate solutions for a robot capable of construction on the moon. The NASA challenge comes with many fascinating problems to tackle, and I am excited to continue developing the automation and telemetry systems.')">
-                    <img src="lunabotics.png" alt="Project 5">
+                <div class="project-card" onclick="openPopup('High End Device Development', 'The final project for my high end device development class had me programming drivers in C for a raspberry pi to run PWM signals to control LED brightness. I then defined a rust user space in order to interact with, read the states of, and control these LEDs. This project gave me great hands on experience with driver development and environment debugging.')">
+                    <img src="rust.png" alt="Project 3">
                     <div class="project-info">
-                        <h3>NASA Lunabotics Challenge</h3>
+                        <h3>Rust interface for LED drivers</h3>
+                    </div>
+                </div>
+                
+                <div class="project-card" onclick="openPopup('CMAPPS RUL prediction', 'Analyzed time series data in the NASA CMAPPS Dataset in order to define an ML model capable of producing accurate prediction of an airplane engines remaining useful life in a variety of operational settings.')">
+                    <img src="cmapps.jpg" alt="Project 5">
+                    <div class="project-info">
+                        <h3>CMAPPS Time Series ML</h3>
                     </div>
                 </div>
 
@@ -117,12 +134,8 @@
                         <h3>Robotic Arm Programming</h3>
                     </div>
                 </div>
-                <div class="project-card" onclick="openPopup('Fibonacci Clock', 'This was a personal project, which I treated as a jumping off point in developing a smart home system. I found some resources online about constructing Fibonacci Clocks, and opted to make my own solution using an ESP32 as the microcontroller in order to have it be web enabled and use RTP in order to pull the time.')">
-                    <img src="fibonacci.jpg" alt="Project 7">
-                    <div class="project-info">
-                        <h3>Fibonacci Clock</h3>
-                    </div>
-                </div>
+
+
                 <div class="project-card" onclick='openPopup("Finance Bros App", "The final project for my database design class gave me experience with full stack development. My team and I designed a database with SQL, then used REST APIs in order to showcase users stock picks, as well as update them with the trades of other users. Explore the code on <a href=\"https://github.com/guenbr/cs3200-FinanceBros\" target=\"_blank\">this repository</a>.")'>
                     <img src="financebro.png" alt="Project 8">
                     <div class="project-info">
@@ -141,15 +154,15 @@
                 <h3>My Skills</h3>
                 <div class="skill-category">
                     <h4>Programming Languages</h4>
-                    <p>C++, Java, Python, SQL, SystemVerilog, R</p>
+                    <p>C++, Java, Python, SQL, SystemVerilog, R, Rust, Embedded C</p>
                 </div>
                 <div class="skill-category">
                     <h4>Software and Systems</h4>
-                    <p>MatLab, OpenCV, Xilinx Vivado, Quartus Prime, LTSpice, Arduino, Linux, Adobe Premiere ProSolidworks, AutoCAD, Autodesk Inventor, Microsoft, Github</p>
+                    <p>Solidworks, AutoCAD, Autodesk Inventor, Arduino, Linux, Microsoft, Network Protocols, Machine Learning, Computer Vision, Github</p>
                 </div>
                 <div class="skill-category">
                     <h4>Hardware</h4>
-                    <p>Microcontrollers, Raspberry Pi, Power tools, Soldering, Oscilliscopes, Multimeter, Circuit Design and Analysis</p>
+                    <p>Microcontrollers, Raspberry Pi, Circuit Design, Power tools, Soldering</p>
                 </div>
         </div>
         </div>
@@ -171,32 +184,58 @@
 
 
     <!-- Contact Section -->
+<!-- Contact Section -->
 <section id="contact" class="section contact-section">
-    <h2>Reach Out</h2>
-        <p>Fill out the form below to contact me, find my LinkedIn in the website footer, or just send me an email at dakleva@gmail.com</p>
-    <form id="contact-form">
-        <input type="text" id="fromName" placeholder="Your Name" required>
-        <input type="email" id="emailSender" placeholder="Your Email" required>
-        <input type="text" id="subjectSender" placeholder="Subject" required>
-        <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
-        <button type="submit" class="btn">Send Message</button>
-    </form>
-    <div id="response" style="margin-top: 20px;"></div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Daniel Klevak. All rights reserved.</p>
-        <div class="social-icons">
-            <a href="https://www.linkedin.com/in/daniel-klevak-b75383181/"><i class="fab fa-linkedin"></i></a>
-        </div>
-    </footer>
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form action="https://formspree.io/f/myzjgjrq" method="POST" class="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+  
+        <label for="email">Email</label>
+        <input type="email" id="email" name="_replyto" required />
+  
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+  
+        <button type="submit" class="btn">Send</button>
+        <div id="form-success" style="display:none; color: green; font-weight: bold; margin-top: 15px;">
+            Message sent successfully!
+          </div>          
+      </form>
+    </div>
+  </section>
+  
 
     <!-- JavaScript -->
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
     <!-- ScrollReveal Library -->
     <script src="https://unpkg.com/scrollreveal"></script>
 
-
+    <script>
+        const form = document.querySelector(".contact-form");
+        const successMessage = document.getElementById("form-success");
+      
+        form.addEventListener("submit", async (e) => {
+          e.preventDefault();
+      
+          const formData = new FormData(form);
+          const response = await fetch(form.action, {
+            method: form.method,
+            body: formData,
+            headers: {
+              Accept: "application/json",
+            },
+          });
+      
+          if (response.ok) {
+            form.reset();
+            successMessage.style.display = "block";
+          } else {
+            alert("There was a problem submitting your form. Please try again later.");
+          }
+        });
+      </script>
+      
 </body>
 </html>
